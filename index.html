@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ember &amp; Oak — Grill House &amp; Steak Hotel</title>
+  <meta name="description" content="Ember &amp; Oak Grill House — wood-fired steaks, live fire cooking and luxury lodge stays in the heart of Nairobi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <header class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">🔥</span>
+        <span class="brand-name">Ember &amp; Oak</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#reserve" class="btn btn-solid nav-cta">Reserve a Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow reveal">Wood-Fired · Open Fire Cooking</p>
+      <h1 class="hero-title reveal">Where the fire<br />tells the story.</h1>
+      <p class="hero-sub reveal">Flame-kissed steaks, slow-smoked ribs and cozy luxury lodge rooms. <br />Savour the heat at Nairobi's most loved grill house.</p>
+      <div class="hero-actions reveal">
+        <a href="#reserve" class="btn btn-solid">Book a Table</a>
+        <a href="#menu" class="btn btn-ghost">Explore the Menu →</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong>12+</strong><span>Years of Fire</span></div>
+        <div class="stat"><strong>40+</strong><span>Signature Dishes</span></div>
+        <div class="stat"><strong>4.9★</strong><span>Guest Rating</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">▾</a>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Flame grilled steak" loading="lazy" />
+        <div class="badge-card">
+          <span class="badge-card-icon">🔥</span>
+          <div><strong>Open Flame</strong><small>Charcoal &amp; oak wood</small></div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2>A love letter to <em>live fire</em></h2>
+        <p class="lead">Ember &amp; Oak began with a single charcoal pit and a stubborn belief: great meat needs nothing but flame, salt and time.</p>
+        <p>Today our chefs master the ancient art of fire cooking — searing prime cuts over glowing embers, smoking brisket for sixteen hours and grilling vegetables until they sing. Stay overnight in our lodge rooms, wake to the scent of morning coals, and leave full, rested and happy.</p>
+        <ul class="tick-list">
+          <li>Certified Angus &amp; grass-fed Kenyan beef</li>
+          <li>Hand-cut butchery on site, daily</li>
+          <li>12 luxury lodge rooms with garden views</li>
+          <li>Free valet parking &amp; event hosting</li>
+        </ul>
+        <a href="#reserve" class="btn btn-outline">Meet Our Chefs →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MENU ====== -->
+  <section class="menu section dark" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">From the Fire</p>
+        <h2>Signature Dishes</h2>
+        <p>Carved, seasoned and kissed by open flame — a few guest favourites.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="dish reveal">
+          <div class="dish-img"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=700&q=80" alt="T-bone steak" loading="lazy" /></div>
+          <div class="dish-body">
+            <div class="dish-title"><h3>Flame T-Bone</h3><span class="price">KSh 2,450</span></div>
+            <p>900g prime T-bone, charcoal seared, smoked garlic butter, chimichurri.</p>
+          </div>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-img"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Mixed grill platter" loading="lazy" /></div>
+          <div class="dish-body">
+            <div class="dish-title"><h3>The Beast Platter</h3><span class="price">KSh 4,900</span></div>
+            <p>Ribs, sausage, chicken wings &amp; steak for two — served on a smoking board.</p>
+          </div>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Brisket stack" loading="lazy" /></div>
+          <div class="dish-body">
+            <div class="dish-title"><h3>16-Hour Brisket</h3><span class="price">KSh 1,850</span></div>
+            <p>Low &amp; slow oak-smoked brisket, bourbon glaze, pickled slaw.</p>
+          </div>
+        </article>
+      </div>
+      <div class="menu-cta reveal">
+        <a href="#reserve" class="btn btn-solid">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY ====== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Moments</p>
+        <h2>Inside Ember &amp; Oak</h2>
+      </div>
+    </div>
+    <div class="gallery-strip">
+      <figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant interior" loading="lazy" /></figure>
+      <figure><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80" alt="Dining area" loading="lazy" /></figure>
+      <figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Grill flames" loading="lazy" /></figure>
+      <figure><img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=600&q=80" alt="Grilled vegetables" loading="lazy" /></figure>
+      <figure><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80" alt="Fine dining plate" loading="lazy" /></figure>
+      <figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Restaurant candlelight" loading="lazy" /></figure>
+    </div>
+  </section>
+
+  <!-- ====== REVIEWS ====== -->
+  <section class="reviews section dark" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Guest Words</p>
+        <h2>Loved by foodies</h2>
+      </div>
+      <div class="review-grid">
+        <blockquote class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>"The T-bone literally made my week. You can taste the wood smoke in every bite. Best grill in the city, hands down."</p>
+          <footer>— Wanjiku M. <span>· Regular since 2019</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>"We hosted our wedding dinner here. The fire pit, the lights, the brisket... our guests are still talking about it."</p>
+          <footer>— Brian &amp; Achieng <span>· Wedding Dinner</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Stayed two nights in the lodge rooms. Cozy, spotless and the breakfast grill is a must. 10/10."</p>
+          <footer>— Daniel K. <span>· Hotel Guest</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== RESERVE ====== -->
+  <section class="reserve section" id="reserve">
+    <div class="container reserve-grid">
+      <div class="reserve-info reveal">
+        <p class="eyebrow">Reservations</p>
+        <h2>Save your seat<br />by the fire</h2>
+        <p>Tables fill fast on weekends — book ahead and we'll have the coals hot and your table ready.</p>
+        <div class="reserve-meta">
+          <p><strong>🕐 Hours</strong> Daily 11:00 AM – 11:00 PM</p>
+          <p><strong>📍 Address</strong> 14 Riverside Drive, Westlands, Nairobi</p>
+          <p><strong>📞 Phone</strong> +254 758 922 294</p>
+          <p><strong>✉️ Email</strong> hello@emberandoak.co.ke</p>
+        </div>
+      </div>
+      <form class="reserve-form reveal" id="reserveForm">
+        <h3>Book a Table</h3>
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+254 7XX XXX XXX" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="field">
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests">
+            <option>1 – 2</option>
+            <option>3 – 4</option>
+            <option>5 – 6</option>
+            <option>7+ (private room)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-solid btn-block">Confirm Reservation</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT / FOOTER ====== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand"><span class="brand-mark">🔥</span><span class="brand-name">Ember &amp; Oak</span></a>
+        <p class="footer-tag">Grill House &amp; Steak Hotel — fire cooking, honest hospitality.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <ul>
+          <li>14 Riverside Drive</li>
+          <li>Westlands, Nairobi</li>
+          <li>+254 758 922 294</li>
+          <li>hello@emberandoak.co.ke</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon – Fri · 11:00 – 23:00</li>
+          <li>Sat – Sun · 09:00 – 23:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Ember &amp; Oak Grill House. Crafted over open flame. 🔥</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
