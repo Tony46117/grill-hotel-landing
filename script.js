@@ -1,4 +1,4 @@
-/* ============ Ember & Oak — Landing Page JS ============ */
+/* ============ Mean Grill — Landing Page JS ============ */
 
 // Sticky navbar
 const navbar = document.getElementById("navbar");
@@ -50,7 +50,7 @@ form.addEventListener("submit", (e) => {
 
   // WhatsApp deep-link to confirm by message
   const msg = encodeURIComponent(
-    `Hi Ember & Oak! I'd like to confirm my reservation:\nName: ${name}\nGuests: ${guests}\nDate: ${date}\nTime: ${time}`
+    `Hi Mean Grill! I'd like to confirm my reservation:\nName: ${name}\nGuests: ${guests}\nDate: ${date}\nTime: ${time}`
   );
   setTimeout(() => {
     window.open(`https://wa.me/254758922294?text=${msg}`, "_blank");

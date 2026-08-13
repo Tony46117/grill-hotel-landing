@@ -1,4 +1,4 @@
-/* ============ Ember & Oak — Landing Page ============ */
+/* ============ Mean Grill — Landing Page ============ */
 :root {
   --coal: #18191f;
   --coal-2: #232533;
@@ -225,7 +225,6 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .dish-body { padding: 24px; }
 .dish-title { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 10px; }
 .dish-title h3 { font-family: var(--serif); font-size: 1.3rem; }
-.price { color: var(--ember-light); font-weight: 700; white-space: nowrap; }
 .dish-body p { color: var(--muted); font-size: 0.95rem; }
 .menu-cta { text-align: center; margin-top: 46px; }
 
@@ -292,6 +291,31 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .field input::placeholder { color: rgba(255, 255, 255, 0.3); }
 .form-note { margin-top: 14px; text-align: center; color: var(--ember-light); font-weight: 600; min-height: 1.4em; }
 
+/* ---------- Floating WhatsApp ---------- */
+.wa-float {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #25d366, #1eb85a);
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 22px;
+  border-radius: 999px;
+  box-shadow: 0 14px 40px rgba(37, 211, 102, 0.45);
+  font-size: 0.92rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: wa-pulse 2.4s infinite;
+}
+.wa-float:hover { transform: translateY(-4px) scale(1.04); box-shadow: 0 20px 50px rgba(37, 211, 102, 0.65); }
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 14px 40px rgba(37, 211, 102, 0.45); }
+  50% { box-shadow: 0 14px 44px rgba(37, 211, 102, 0.8), 0 0 0 10px rgba(37, 211, 102, 0.12); }
+}
+
 /* ---------- Footer ---------- */
 .footer { background: #121318; padding: 70px 0 0; border-top: 1px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 50px; }
@@ -328,4 +352,6 @@ h2 em { font-style: italic; color: var(--ember-light); }
 @media (max-width: 520px) {
   .field-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  .wa-float span { display: none; }
+  .wa-float { padding: 15px; border-radius: 50%; }
 }
