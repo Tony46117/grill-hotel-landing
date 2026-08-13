@@ -164,15 +164,6 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .hero-sub { max-width: 620px; font-size: 1.12rem; color: var(--cream); opacity: 0.9; margin-bottom: 34px; }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 56px; }
 
-.hero-stats { display: flex; gap: 48px; flex-wrap: wrap; }
-.stat strong {
-  display: block;
-  font-family: var(--serif);
-  font-size: 2.1rem;
-  color: var(--ember-light);
-}
-.stat span { font-size: 0.85rem; color: var(--muted); letter-spacing: 0.05em; }
-
 .scroll-hint {
   position: absolute;
   bottom: 26px; left: 50%;
@@ -347,7 +338,6 @@ h2 em { font-style: italic; color: var(--ember-light); }
   .menu-grid, .review-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .badge-card { left: 10px; }
-  .hero-stats { gap: 28px; }
 }
 @media (max-width: 520px) {
   .field-row { grid-template-columns: 1fr; }
