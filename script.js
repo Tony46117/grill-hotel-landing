@@ -1,12 +1,10 @@
-/* ============ Mean Grill — Landing Page JS ============ */
+ 
 
-// Sticky navbar
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 40);
 });
 
-// Mobile menu
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 hamburger.addEventListener("click", () => {
@@ -20,7 +18,6 @@ navLinks.querySelectorAll("a").forEach((link) =>
   })
 );
 
-// Scroll reveal
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -34,7 +31,6 @@ const revealObserver = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
-// Reservation form (front-end demo)
 const form = document.getElementById("reserveForm");
 const note = document.getElementById("formNote");
 form.addEventListener("submit", (e) => {
@@ -48,7 +44,7 @@ form.addEventListener("submit", (e) => {
   note.style.color = "#f0a55a";
   note.textContent = `🔥 Asante ${name.split(" ")[0]}! Your table for ${guests} is reserved for ${date} at ${time}. We'll confirm via ${phone}.`;
 
-  // WhatsApp deep-link to confirm by message
+  
   const msg = encodeURIComponent(
     `Hi Mean Grill! I'd like to confirm my reservation:\nName: ${name}\nGuests: ${guests}\nDate: ${date}\nTime: ${time}`
   );

@@ -1,4 +1,4 @@
-/* ============ Mean Grill — Landing Page ============ */
+ 
 :root {
   --coal: #18191f;
   --coal-2: #232533;
@@ -39,7 +39,7 @@ a { color: inherit; text-decoration: none; }
 
 .dark { background: var(--coal-2); }
 
-/* ---------- Reveal animation ---------- */
+ 
 .reveal {
   opacity: 0;
   transform: translateY(26px);
@@ -47,7 +47,7 @@ a { color: inherit; text-decoration: none; }
 }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ---------- Buttons ---------- */
+ 
 .btn {
   display: inline-block;
   padding: 14px 30px;
@@ -71,7 +71,7 @@ a { color: inherit; text-decoration: none; }
 .btn-outline:hover { background: var(--ember); color: #fff; transform: translateY(-3px); }
 .btn-block { width: 100%; text-align: center; }
 
-/* ---------- Eyebrow ---------- */
+ 
 .eyebrow {
   color: var(--ember-light);
   text-transform: uppercase;
@@ -93,7 +93,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .section-head { text-align: center; max-width: 640px; margin: 0 auto 60px; }
 .section-head p:last-child { color: var(--muted); }
 
-/* ---------- Navbar ---------- */
+ 
 .nav {
   position: fixed;
   inset: 0 0 auto 0;
@@ -140,7 +140,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ---------- Hero ---------- */
+ 
 .hero {
   min-height: 100vh;
   display: flex;
@@ -188,7 +188,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 }
 @keyframes bounce { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 10px); } }
 
-/* ---------- About ---------- */
+ 
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 .about-media { position: relative; }
 .about-media img { border-radius: 18px; box-shadow: var(--shadow); aspect-ratio: 4/5; object-fit: cover; }
@@ -212,7 +212,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .tick-list li { position: relative; padding-left: 30px; color: var(--cream); }
 .tick-list li::before { content: "✓"; position: absolute; left: 0; color: var(--ember-light); font-weight: 700; }
 
-/* ---------- Menu ---------- */
+ 
 .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .dish {
   background: var(--coal);
@@ -231,7 +231,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .dish-body p { color: var(--muted); font-size: 0.95rem; }
 .menu-cta { text-align: center; margin-top: 46px; }
 
-/* ---------- Gallery ---------- */
+ 
 .gallery-strip {
   display: grid;
   grid-auto-flow: column;
@@ -247,7 +247,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .gallery-strip::-webkit-scrollbar { height: 8px; }
 .gallery-strip::-webkit-scrollbar-thumb { background: var(--ember); border-radius: 99px; }
 
-/* ---------- Reviews ---------- */
+ 
 .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .review {
   background: var(--coal);
@@ -262,7 +262,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .review footer { color: var(--muted); font-size: 0.9rem; }
 .review footer span { color: var(--ember-light); }
 
-/* ---------- Reserve ---------- */
+ 
 .reserve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 .reserve-meta { margin-top: 28px; display: grid; gap: 14px; }
 .reserve-meta p { color: var(--muted); }
@@ -294,7 +294,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .field input::placeholder { color: rgba(255, 255, 255, 0.3); }
 .form-note { margin-top: 14px; text-align: center; color: var(--ember-light); font-weight: 600; min-height: 1.4em; }
 
-/* ---------- Floating WhatsApp ---------- */
+ 
 .wa-float {
   position: fixed;
   bottom: 26px;
@@ -319,7 +319,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
   50% { box-shadow: 0 14px 44px rgba(37, 211, 102, 0.8), 0 0 0 10px rgba(37, 211, 102, 0.12); }
 }
 
-/* ---------- Footer ---------- */
+ 
 .footer { background: #121318; padding: 70px 0 0; border-top: 1px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 50px; }
 .footer-tag { color: var(--muted); margin-top: 14px; font-size: 0.95rem; }
@@ -329,7 +329,7 @@ h2 em { font-style: italic; color: var(--ember-light); }
 .footer li a:hover { color: var(--ember-light); }
 .footer-bottom { border-top: 1px solid var(--line); padding: 22px 0; text-align: center; color: var(--muted); font-size: 0.85rem; }
 
-/* ---------- Responsive ---------- */
+ 
 @media (max-width: 900px) {
   .nav-links {
     position: fixed;
